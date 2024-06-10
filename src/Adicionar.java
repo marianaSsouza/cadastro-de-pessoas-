@@ -2,20 +2,26 @@ public class Adicionar {
     String nome;
     int idade;
 
-    public addPessoa (String nome, int idade){
+    public Adicionar(String nome, int idade){
         this.nome = nome;
         this.idade = idade; 
     }
 
-        public void getIdade() {
-            return idade;
-        }
+    public String getNome() {
+        return nome;
+    }
 
-        public void setIdade(int idade){
-            this.idade = idade;
-        }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-        public String toString(){
-            return "nome: " + ""
-        }
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    
 }
