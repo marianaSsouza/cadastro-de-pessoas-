@@ -13,6 +13,9 @@ public class App {
             case 'C':
                 System.out.println("Criando um novo registro");
                 break;
+            case 'U':
+                System.out.println("Atualizar um novo registro");
+                break;
            
             default:
                 break;
