@@ -1,10 +1,10 @@
 public class Pessoa {
-    String nome;
-    String telefone;
+    private String nome;
+    private int idade;
 
-    public Pessoa(String nome, String telefone) {
+    public Pessoa(String nome, int idade) {
         this.nome = nome;
-        this.telefone = telefone;
+        this.idade = idade;
     }
 
     public String getNome() {
@@ -15,12 +15,19 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", Idade: " + idade;
+    }
 }
+   
+
+
